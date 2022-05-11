@@ -1,0 +1,388 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(-45deg, #eb9175, #bbc4db, #a3e2f7, #7591ee);
+    // background: linear-gradient(to bottom, , );
+    color: rgb(79, 79, 79);
+    animation: gradient 15s ease infinite;
+  }
+
+// Gradient Background Animation adapted from https://codepen.io/P1N2O/pen/pyBNzX
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  
+footer{
+  color: rgb(18, 18, 18);
+  letter-spacing: 0.05em;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Archivo Black';
+  position: relative;
+  bottom: 0;
+}
+
+.app-standard-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 50vw;
+  margin: 10px;
+}
+
+#pawprint-header{
+  font-size: 3em;
+}
+#pawprint-header:hover{
+  font-size: 3em;
+  transform: rotateX('10');
+}
+
+.new-friends{
+  font-family: 'Train One', cursive;
+  font-size: 3em;
+  margin-left: 4%;
+}
+
+.logo {
+  background-image: url('img/bluepinkdot.png');
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.active {
+  color: black;
+  box-shadow: 0px 2px 0px black;
+  transition-timing-function: ease-in;
+}
+
+// Styling for Nav Elements
+
+nav{
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left:0;
+  margin:10px;
+  width: 15%;
+  align-self: center;
+  justify-self: center;
+  color: black;
+}
+
+nav ul span{
+  color: black;
+  font-size: 4em;
+}
+
+@keyframes swivel{
+  0%{transform: rotateX('180deg')}
+}
+
+#home-button:hover{
+  animation: swivel 1s;
+
+}
+
+
+// Styling for the New Post Page
+  
+.new-post-page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 40px;
+}
+
+.new-post-input-spacer{
+  display: flex;
+  margin: 10px;
+}
+
+.post-button-menu{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.new-post-box{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  box-shadow: 3px 3px 1px rgba(55, 55, 55, 0.281);
+  padding: 30px;
+  width: 80%;
+  align-self: center;
+  border-radius: 2px;
+}
+
+.post-button-menu Button{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color:rgb(79, 79, 79);
+}
+.new-post-box Alert{
+  margin: 20px;
+}
+
+.post-button-menu Button a{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  color:rgb(79, 79, 79);
+}
+
+.create-title{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3em;
+}
+
+#waving-hand{
+  font-size: 3.5em;
+  margin-left: 20px;
+}
+
+.create-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+// Styling for Posts
+
+.posts-display {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.posts-background{
+  min-height: 100vw;
+}
+
+// Styling for Post Thumbnails on Home Screen
+
+.post-thumb{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 20px;
+  width: 25%;
+  background-color: rgba(245, 245, 245, 0.486);
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  color:rgb(40, 40, 40);
+  word-break: break-all;
+
+
+}
+
+.post-thumb span{
+  display: flex;
+  max-width: 100%;
+  word-break: break-all;
+}
+
+.post-thumb-title{
+  margin-top: 10px;
+  margin-bottom: 10px;;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2em;
+  color:rgb(40, 40, 40);
+  max-width: 100%;
+  word-break: break-all;
+}
+
+.post-thumb-tags{
+  font-family: 'Work Sans', sans-serif;
+  color:rgb(40, 40, 40);
+  word-break: break-all;
+
+
+}
+
+.post-thumb-img{
+  display: flex;
+  max-width: 100%;
+  width: 100vw;
+  min-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-thumb a{
+  text-decoration: none;
+  color: darkgray;
+}
+
+@keyframes pop {
+  0% {transform: scale(1);}
+  33% {transform: scale(0.98); }
+  66% {transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+  }
+
+.post-thumb:hover{
+  color:#7591ee;
+  animation: pop 0.4s ease-out;
+}
+
+// Styling for Post Detail Box
+
+
+.post-detail-box{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(249, 249, 249);
+  box-shadow: 3px 3px 1px rgba(55, 55, 55, 0.281);
+  padding: 30px;
+  width: auto;
+  align-self: center;
+  border-radius: 2px;
+  word-break: break-all;
+}
+
+.post-detail-img{
+  max-width: 50%;
+  width: 4000px;
+}
+
+.post-detail-column{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post-detail-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  height: 50%;
+  justify-content: space-evenly;
+}
+
+.post-detail-screen{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 40px;
+  
+}
+
+.detail-title{
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3em;
+}
+
+.post-detail-box-editing{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(249, 249, 249);
+  box-shadow: 3px 3px 1px rgba(55, 55, 55, 0.281);
+  padding: 30px;
+  width: 70vw;
+  align-self: center;
+  border-radius: 2px;
+  word-break: break-all;
+}
+
+.back-button{
+  text-decoration: none;
+}
+
+.post-detail-button-menu{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  justify-self: flex-end;
+  color: black;
+}
+
+.post-detail-button-menu Button a{
+  color: black;
+}
+
+.post-detail-button-menu Button span{
+  color: black;
+}
+
+
+// mobile UI
+
+@media only screen and (max-width: 640px) {
+  .posts-display {
+    flex-flow: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .post-thumb{
+    width: 70vw;
+    align-self: center;
+    word-break: break-all;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .post-detail-box{
+    flex-direction: column;
+    overflow:visible;
+    width: 80%;
+    margin-bottom: 0;
+  }
+  .post-detail-img{
+    max-width: 100%;
+    width: 4000px;
+  }
+  .post-detail-text{
+    margin-left: 0;
+    margin: 0px;
+    height: 100%;
+  }
+  .post-detail-column{
+    margin: 0px;
+    overflow: auto;
+  }
+  .post-detail-button-menu{
+    visibility: visible;
+    margin-top: 0;
+  }
+  .post-detail-screen{
+    overflow: visible;
+    min-height: 150vh;
+  }
+
+
+}
