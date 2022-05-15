@@ -2,7 +2,7 @@
 
 *For this lab, I created a posting application with the CRUD functionalities (based upon a backend API provided by the instructor). I chose to design and code my application as a website called "new friends" which is specifically designed for users to post rescue animals and pets seeking adoption or foster homes. Thumbnails of all posts (cover image, title, tags) are visible from the home page, while clicking on any post's thumbnail will open a larger view of the post with its content. Posts can also be edited and deleted in individual post-viewing mode. The new-post page appears when the 'plus' sign is clicked from the nav bar, and allows a user to input title, tags, content, and a Cover URL for a new post, that is then posted when submitted or discarded if not submitted. A user will not be allowed to create a post if any of the inputs on the form is empty, though it will allow a "broken" corver URL and replace this with a default image if none is found. Tags are parsed and listed as an array in the thumbnails, which could be used for post-filtering in a future refinement of the application. I utilized the Materials UI package to help create the styling and UI for my application, which has its own versions of TextField and Button inputs.*
 
-[deployed url](https://adorable-fairy-ad7b02.netlify.app/)
+[deployed url](https://brilliant-lamington-a5e523.netlify.app/)
 
 ## What Worked Well
 
